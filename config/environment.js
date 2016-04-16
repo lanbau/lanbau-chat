@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'lanbau-chat',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://firechato.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
